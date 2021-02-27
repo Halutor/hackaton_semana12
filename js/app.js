@@ -3,6 +3,32 @@ let operandoa;
 let operandob;
 let operacion;
 
+function resolver() {
+    var res = 0;
+    switch (operacion) {
+        case "+":
+            res = parseFloat(operandoa) + parseFloat(operandob);
+            break;
+        case "-":
+            res = parseFloat(operandoa) - parseFloat(operandob);
+            break;
+        case "*":
+            res = parseFloat(operandoa) * parseFloat(operandob);
+            break;
+        case "/":
+            res = parseFloat(operandoa) / parseFloat(operandob);
+            break;
+        case "**":
+            res = parseFloat(operandoa) ** parseFloat(operandob);
+            break;
+        case "%":
+            res = parseFloat(operandoa) % parseFloat(operandob);
+            break;
+    }
+    resetear();
+    resultado.textContent = res;
+}
+
 function init() {
     let resultado = document.getElementById('resultado');
     let reset = document.getElementById('reset');
@@ -105,30 +131,4 @@ function resetear() {
     operacion = "";
 }
 
-
-function resolver() {
-    var res = 0;
-    switch (operacion) {
-        case "+":
-            res = parseFloat(operandoa) + parseFloat(operandob);
-            break;
-        case "-":
-            res = parseFloat(operandoa) - parseFloat(operandob);
-            break;
-        case "*":
-            res = parseFloat(operandoa) * parseFloat(operandob);
-            break;
-        case "/":
-            res = parseFloat(operandoa) / parseFloat(operandob);
-            break;
-        case "**":
-            res = parseFloat(operandoa) ** parseFloat(operandob);
-            break;
-        case "%":
-            res = parseFloat(operandoa) % parseFloat(operandob);
-            break;
-    }
-    resetear();
-    resultado.textContent = res;
-}
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Practica TodoList</h2>
+        <h3>Agregar tarea</h3>
+        <p>
+            <input id="new-task" type="text"><button>Añadir</button>
+        </p>
+
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <li><input type="checkbox"><label>Estudiar</label><input type="text"><button
+                    class="edit">Editar</button><button class="delete">Borrar</button></li>
+        </ul>
+
+        <h3>Tareas completadas</h3>
+        <ul id="completed-tasks">
+            <li><input type="checkbox" checked><label>Repaso</label><input type="text"><button
+                    class="edit">Editar</button><button class="delete">Borrar</button></li>
+        </ul>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
